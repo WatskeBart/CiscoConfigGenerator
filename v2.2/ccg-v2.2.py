@@ -920,7 +920,7 @@ def main(argv):
         print ("Cisco Config Generator %s"%__version__)
         print ("============================================================")
         print ("Usage: %s <filename.xls>"%sys.argv[0])
-        exit()
+        sys.exit()
     if sys.argv[1]:
         global filename
         filename = sys.argv[1]
@@ -930,7 +930,7 @@ def main(argv):
     except IOError:
         print ("Unable to open: %s"% sys.argv[1])
         print ("Program aborted.")
-        exit()
+        sys.exit()
 
 if __name__ == '__main__':
     main(sys.argv)
